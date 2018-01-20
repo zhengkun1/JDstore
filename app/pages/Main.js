@@ -6,52 +6,31 @@
 
 import React, { Component } from 'react';
 import {
-  Platform,
+  // Platform,
   StyleSheet,
-  Text,
+  // Text,
   View,
 } from 'react-native';
-
-const instructions = Platform.select({
-  ios: 'Press Cmd+R to reload,\n' +
-    'Cmd+D or shake for dev menu',
-  android: 'Double tap R on your keyboard to reload,\n' +
-    'Shake or press menu button for dev menu',
-});
+import { Button, Avatar } from 'react-native-elements';
 
 export default class Main extends Component<{}> {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome11}>
-          你们好  我叫刘琦  是个智障
-        </Text>
-        <Text style={styles.instructions}>
-          liuqishishasbi
-        </Text>
-        <Text style={styles.instructions}>
-          {instructions}
-        </Text>
+        <Avatar
+          small
+          rounded
+          source={{ uri: "https://s3.amazonaws.com/uifaces/faces/twitter/ladylexy/128.jpg" }}
+          onPress={() => console.log("Works!")}
+          activeOpacity={0.7}
+        />
+        <Button
+          title="heiheihei"
+        />
       </View>
     );
   }
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: 'black',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
 });
