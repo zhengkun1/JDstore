@@ -23,11 +23,11 @@ export default class Main extends Component<{}> {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>
-          nihao hello
+        <Text style={styles.welcome11}>
+          你们好  我叫刘琦  是个智障
         </Text>
         <Text style={styles.instructions}>
-          To get started, edit App.js
+          liuqishishasbi
         </Text>
         <Text style={styles.instructions}>
           {instructions}
@@ -42,7 +42,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#F5FCFF',
+    backgroundColor: 'black',
   },
   welcome: {
     fontSize: 20,
