@@ -26,7 +26,7 @@ export default class Homepage extends Component<{}> {
           activeOpacity={0.7}
         />
         <Button
-          title="heiheihei"
+          title="this is K"
         />
       </View>
     );

@@ -3,18 +3,26 @@
  */
 
 import { TabNavigator } from 'react-navigation';
+import Ionicons from 'react-native-vector-icons/Ionicons';
+
 import Homepage from './pages/Homepage';
 import Self from './pages/Self';
 import Found from './pages/Found';
 import Classify from './pages/Classify';
 import ShoppingCart from './pages/ShoppingCart';
 
-
 const Tabs = TabNavigator({
   HOME: {
     screen: Homepage,
     navigationOptions: {
       tabBarLabel: '首页',
+      tabBarIcon: ({ tintColor, focused }) => (
+        <Ionicons
+          name={focused ? 'android' : 'android-studio'}
+          size={26}
+          style={{ color: tintColor }}
+        />
+      ),
     },
   },
   Classify: {
@@ -50,7 +58,16 @@ const Tabs = TabNavigator({
   labelStyle: {
     backgroundColor: 'white',
   },
+  tabBarOptions: {
+    style: {
+      backgroundColor: 'white',
+    },
+    labelStyle: {
+      color: 'black',
+    },
+  },
 });
+
 const Navigations = {
   Main: { screen: Tabs },
 };
