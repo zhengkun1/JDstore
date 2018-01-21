@@ -4,14 +4,12 @@
 
 import React, { Component } from 'react';
 import {
-  // Platform,
   StyleSheet,
-  // Text,
   View,
 } from 'react-native';
 import { Button, Avatar, Header } from 'react-native-elements';
 
-export default class Main extends Component<{}> {
+export default class Homepage extends Component<{}> {
   render() {
     return (
       <View style={styles.container}>
