@@ -1,3 +1,7 @@
+/**
+ * 2018-1-21 Zheng Kun
+ */
+
 import React, { Component } from 'react';
 import {
   View,
