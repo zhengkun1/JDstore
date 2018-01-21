@@ -11,12 +11,17 @@ import {
   // Text,
   View,
 } from 'react-native';
-import { Button, Avatar } from 'react-native-elements';
+import { Button, Avatar, Header } from 'react-native-elements';
 
 export default class Main extends Component<{}> {
   render() {
     return (
       <View style={styles.container}>
+        <Header
+          leftComponent={{ icon: 'menu', color: '#fff' }}
+          centerComponent={{ text: 'MY TITLE', style: { color: '#fff' } }}
+          rightComponent={{ icon: 'home', color: '#fff' }}
+        />
         <Avatar
           small
           rounded
