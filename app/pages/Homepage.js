@@ -8,8 +8,20 @@ import {
   View,
 } from 'react-native';
 import { Button, Avatar, Header } from 'react-native-elements';
+import Ionicons from 'react-native-vector-icons/Entypo';
 
-export default class Homepage extends Component<{}> {
+export default class Homepage extends Component {
+  static navigationOptions= {
+    header: null,
+    tabBarLabel: '首页',
+    tabBarIcon: ({ tintColor, focused }) => (
+      <Ionicons
+        name={focused ? 'home' : 'home'}
+        size={26}
+        style={{ color: tintColor }}
+      />
+    ),
+  }
   render() {
     return (
       <View style={styles.container}>
