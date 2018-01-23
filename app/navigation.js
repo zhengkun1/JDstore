@@ -57,9 +57,6 @@ const Tabs = TabNavigator({
     backgroundColor: 'white',
   },
   swipeEnabled: false,
-  labelStyle: {
-    backgroundColor: 'white',
-  },
   tabBarOptions: {
     showIcon: true,
     activeTintColor: 'red',
@@ -68,7 +65,11 @@ const Tabs = TabNavigator({
       backgroundColor: 'white',
     },
     labelStyle: {
-      color: 'black',
+      fontSize: 10,
+      paddingTop: 0,
+      paddingBottom: 0,
+      marginBottom: 0,
+      marginTop: 0,
     },
   },
 });

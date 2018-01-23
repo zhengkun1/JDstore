@@ -40,7 +40,7 @@ export default class Self extends Component {
     tabBarIcon: ({ tintColor, focused }) => (
       <Ionicons
         name={focused ? 'user' : 'user'}
-        size={26}
+        size={20}
         style={{ color: tintColor }}
       />
     ),
