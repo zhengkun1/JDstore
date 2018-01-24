@@ -32,7 +32,7 @@ const font = {
     fontSize: 5,
   },
   middle: {
-    fontSize: 10
+    fontSize: 10,
   },
   large: {
     fontSize: 15,
