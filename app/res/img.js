@@ -29,9 +29,9 @@
 
 const img = {
   slides: [
-    'https://ss0.bdstatic.com/6ONWsjip0QIZ8tyhnq/it/u=1618097094,4154452434&fm=77&w_h=121_75&cs=423647557,799948659',
-    'https://ss0.bdstatic.com/6ONWsjip0QIZ8tyhnq/it/u=3545401083,2251952841&fm=77&w_h=121_75&cs=2008984878,1171842780',
-    'https://ss0.bdstatic.com/6ONWsjip0QIZ8tyhnq/it/u=648300297,3284313282&fm=77&w_h=121_75&cs=1136402502,639612303',
+    'http://file28.mafengwo.net/M00/B3/7F/wKgB6lRTzqiAPvooAAnd5QaCdAw75.rbook_comment.w1024.jpeg',
+    'http://img5.duitang.com/uploads/item/201601/26/20160126014249_anv3s.png',
+    'http://imgsrc.baidu.com/image/c0%3Dpixel_huitu%2C0%2C0%2C294%2C40/sign=c01101c577d98d1062d904714847dd62/e1fe9925bc315c60da64fcd686b1cb1349547712.jpg',
   ],
 };
 

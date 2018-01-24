@@ -66,7 +66,7 @@ const styles = {
     height: Dimension.Height(330),
   },
   slide: {
-    width: Dimension.Width(720),
+    width: Dimension.Width(640),
     height: Dimension.Height(330),
   },
 };
