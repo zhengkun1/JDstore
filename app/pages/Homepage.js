@@ -29,13 +29,18 @@
 
 import React, { Component } from 'react';
 import {
-  StyleSheet,
   View,
+  ScrollView,
+  StyleSheet,
 } from 'react-native';
-import { Button, Avatar, Header } from 'react-native-elements';
+import { Header } from 'react-native-elements';
 import Ionicons from 'react-native-vector-icons/Entypo';
 
-export default class Homepage extends Component {
+import Serch from '../components/Serch';
+import Scan from '../components/Scan';
+import Carousel from '../components/HomeCarousel';
+
+class Homepage extends Component {
   static navigationOptions= {
     header: null,
     tabBarLabel: '首页',
@@ -49,26 +54,27 @@ export default class Homepage extends Component {
   }
   render() {
     return (
-      <View style={styles.container}>
-        <Header
-          leftComponent={{ icon: 'menu', color: '#fff' }}
-          centerComponent={{ text: 'MY TITLE', style: { color: '#fff' } }}
-          rightComponent={{ icon: 'home', color: '#fff' }}
-        />
-        <Avatar
-          small
-          rounded
-          source={{ uri: "https://s3.amazonaws.com/uifaces/faces/twitter/ladylexy/128.jpg" }}
-          onPress={() => console.log("Works!")}
-          activeOpacity={0.7}
-        />
-        <Button
-          title="this is K"
-        />
+      <View>
+        <ScrollView>
+          <Header
+            leftComponent={<Scan />}
+            centerComponent={<Serch />}
+            rightComponent={<Scan />}
+            outerContainerStyles={styles.outerheader}
+            backgroundColor="white"
+          />
+          <Carousel />
+        </ScrollView>
       </View>
     );
   }
 }
 
 const styles = StyleSheet.create({
+  outerheader: {
+    height: 50,
+  },
 });
+
+export default Homepage;
+

@@ -28,8 +28,11 @@
  */
 
 const img = {
-  paomadeng: [
+  slides: [
+    'https://ss0.bdstatic.com/6ONWsjip0QIZ8tyhnq/it/u=1618097094,4154452434&fm=77&w_h=121_75&cs=423647557,799948659',
+    'https://ss0.bdstatic.com/6ONWsjip0QIZ8tyhnq/it/u=3545401083,2251952841&fm=77&w_h=121_75&cs=2008984878,1171842780',
+    'https://ss0.bdstatic.com/6ONWsjip0QIZ8tyhnq/it/u=648300297,3284313282&fm=77&w_h=121_75&cs=1136402502,639612303',
+  ],
+};
 
-  ]
-}
 export default img;

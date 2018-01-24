@@ -27,18 +27,12 @@
  *     Initial: 2018/01/24       Zheng Kun
  */
 
-import React, { Component } from 'react';
-import {
-  View,
-} from 'react-native';
-import { Icon } from 'react-native-elements';
+import Slides from '../res/img';
 
-export default class Message extends Component {
-  render() {
-    return (
-      <View>
-        <Icon name="" />
-      </View>
-    );
-  }
-}
+export default {
+  namespace: 'carousel',
+
+  state: {
+    slides: Slides.slides,
+  },
+};

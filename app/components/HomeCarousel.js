@@ -28,17 +28,47 @@
  */
 
 import React, { Component } from 'react';
-import {
-  View,
-} from 'react-native';
-import { Icon } from 'react-native-elements';
+import { Image, View } from 'react-native';
+import Carousel from 'react-native-snap-carousel';
+import { connect } from 'react-redux';
 
-export default class Message extends Component {
+import Dimension from '../res/Dimension';
+
+const renderSlide = ({ item }) => {
+  return (
+    <Image
+      source={{ uri: item }}
+      style={styles.slide}
+    />);
+};
+
+class HomeCarousel extends Component {
   render() {
     return (
-      <View>
-        <Icon name="" />
+      <View style={styles.carousel}>
+        <Carousel
+          autoplay
+          loop
+          autoplayDelay={4000}
+          autoplayInterval={4000}
+          data={this.props.slides}
+          renderItem={renderSlide}
+          sliderWidth={Dimension.ScreenWidth}
+          itemWidth={Dimension.ScreenWidth}
+        />
       </View>
     );
   }
 }
+
+const styles = {
+  carousel: {
+    height: Dimension.Height(330),
+  },
+  slide: {
+    width: Dimension.Width(720),
+    height: Dimension.Height(330),
+  },
+};
+
+export default connect(({ carousel }) => ({ slides: carousel.slides }))(HomeCarousel);
