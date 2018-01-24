@@ -24,24 +24,14 @@
 
 /*
  * Revision History:
- *     Initial: 2018/01/17       Zheng Kun
+ *     Initial: 2018/01/24       Zheng Kun
  */
 
-import { Dimensions } from 'react-native';
-
-const _width = 640;
-const _height = 1138;
-
-const Styles = {
-  ScreenWidth: Dimensions.get('window').width,
-
-  Height: (x) => {
-    return x * Dimensions.get('window').height / _height; //eslint-disable-line
-  },
-
-  Width: (y) => {
-    return y * Dimensions.get('window').width / _width; //eslint-disable-line
+const styles = {
+  center: {
+    alignItems: 'center',
+    justifyContent: 'center',
   },
 };
 
-export default Styles;
+export default styles;

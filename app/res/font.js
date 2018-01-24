@@ -24,7 +24,7 @@
 
 /*
  * Revision History:
- *     Initial: 2018/01/17       Zheng Kun
+ *     Initial: 2018/01/24       Zheng Kun
  */
 
 const font = {
