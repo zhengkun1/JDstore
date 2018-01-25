@@ -27,12 +27,30 @@
  *     Initial: 2018/01/24       Zheng Kun
  */
 
-const img = {
+const image = {
   slides: [
     'http://file28.mafengwo.net/M00/B3/7F/wKgB6lRTzqiAPvooAAnd5QaCdAw75.rbook_comment.w1024.jpeg',
     'http://img5.duitang.com/uploads/item/201601/26/20160126014249_anv3s.png',
     'http://imgsrc.baidu.com/image/c0%3Dpixel_huitu%2C0%2C0%2C294%2C40/sign=c01101c577d98d1062d904714847dd62/e1fe9925bc315c60da64fcd686b1cb1349547712.jpg',
   ],
+  title: [
+    {
+      title: '京东超市',
+      icon: '京东超市',
+    }, {
+      title: '全球购',
+      icon: '全球购',
+    }, {
+      title: '京东服饰',
+      icon: '京东服饰',
+    }, {
+      title: '京东生鲜',
+      icon: '京东生鲜',
+    }, {
+      title: '排行榜',
+      icon: '排行榜',
+    },
+  ],
 };
 
-export default img;
+export default image;

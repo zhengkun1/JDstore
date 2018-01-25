@@ -38,6 +38,7 @@ import Ionicons from 'react-native-vector-icons/Entypo';
 
 import Serch from '../components/Serch';
 import Scan from '../components/Scan';
+import Navigationicon from '../components/Navigationicon';
 import Carousel from '../components/HomeCarousel';
 
 class Homepage extends Component {
@@ -64,6 +65,7 @@ class Homepage extends Component {
             backgroundColor="white"
           />
           <Carousel />
+          <Navigationicon />
         </ScrollView>
       </View>
     );

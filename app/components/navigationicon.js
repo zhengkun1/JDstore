@@ -34,26 +34,35 @@ import {
   Text,
 } from 'react-native';
 import { Button } from 'react-native-elements';
+import { connect } from 'react-redux';
 
-export default class Navigationicon extends Component {
+class Navigationicon extends Component {
   render() {
     const { title } = this.props;
     return (
-      <View>
+      <View style={style.navigation}>
         <Button
           buttonStyle={style.button}
-          title={title}
+          title={title.icon}
         />
-        <Text>{title}</Text>
+        <Text>{title.title}</Text>
       </View>
     );
   }
 }
 
 const style = StyleSheet.create({
+  navigation: {
+    width: 128,
+    height: 128,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
   button: {
-    height: 25,
-    width: 25,
+    height: 50,
+    width: 50,
     borderRadius: 5,
   },
 });
+
+export default connect(({ navigation }) => ({ title: navigation.title }))(Navigationicon);

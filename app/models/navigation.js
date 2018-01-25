@@ -24,17 +24,15 @@
 
 /*
  * Revision History:
- *     Initial: 2018/01/24       Zheng Kun
+ *     Initial: 2018/01/25       Zheng Kun
  */
 
-import init from './init';
-import router from './router';
-import carousel from './carousel';
-import navigation from './navigation';
+import Navigation from '../res/img';
 
-export const Models = [
-  init,
-  router,
-  carousel,
-  navigation,
-];
+export default {
+  namespace: 'navigation',
+
+  state: {
+    title: Navigation.title,
+  },
+};
